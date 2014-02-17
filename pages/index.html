@@ -1,7 +1,22 @@
 {% extends "base.html" %}
 
+{% block header %}
+{% endblock %}
+	
+	
 {% block content %}
-	<div style="background:yellow">Header</div>
-	<div style="background:grey">Image list</div>
-	<div style="background:blue">Image itself</div>
+<div class="row">
+	<div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">2014-02-01</a></li>
+            <li><a href="#">2014-02-02</a></li>
+            <li><a href="#">2014-02-03</a></li>
+            <li><a href="#">2014-02-04</a></li>
+          </ul>
+    </div>
+
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+    	<img src="{{ STATIC_URL }}/test/image1.jpg" alt="mapa"/>
+	</div>
+</div>
 {% endblock %}
